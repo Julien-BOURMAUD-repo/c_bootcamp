@@ -1,0 +1,22 @@
+// my_strcat.c
+char *my_strcat(char *dest, const char *src)
+{
+    char *ptr = dest;
+
+    // Avancer jusqu’à la fin de dest
+    while (*dest != '\0') {
+        dest++;
+    }
+
+    // Copier src à la suite
+    while (*src != '\0') {
+        *dest = *src;
+        dest++;
+        src++;
+    }
+
+    // Terminer la nouvelle chaîne
+    *dest = '\0';
+
+    return ptr;
+}
