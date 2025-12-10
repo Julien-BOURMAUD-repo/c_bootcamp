@@ -8,7 +8,6 @@ char *my_strchr(const char *s, int c)
         s++;
     }
 
-    /* Vérifie si on cherche '\0' */
     if (c == '\0')
         return (char *)s;
 
