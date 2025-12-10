@@ -10,9 +10,8 @@ char *my_strrchr(const char *s, int c)
         s++;
     }
 
-    /* Si on cherche le '\0', renvoyer le pointeur sur le terminateur */
     if (c == '\0')
         return (char *)s;
 
-    return (char *)last;   /* peut être NULL si non trouvé */
+    return (char *)last;
 }
