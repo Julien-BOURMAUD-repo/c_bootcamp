@@ -1,4 +1,5 @@
 #include <stddef.h>
+#include <string.h>
 
 /*
  * my_strtok : version simplifiée du strtok standard.
